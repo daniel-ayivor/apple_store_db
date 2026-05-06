@@ -3,7 +3,7 @@ import { authController } from '../controllers/authController';
 import { authenticateToken } from '../middleware/auth';
 
 const router = Router();
-
+//  oak
 router.post('/register', authController.register);
 router.post('/login', authController.login);
 router.get('/debug-role', authController.debugRole);
