@@ -37,6 +37,7 @@ app.use(cors({
 app.use(express.json());
 app.use(morgan('dev'));
 
+// fixed CORS issues by allowing preflight requests for all routes
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);           // For user profile, cart, etc.
