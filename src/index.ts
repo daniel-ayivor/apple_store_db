@@ -47,7 +47,7 @@ app.use('/api/admin', adminRoutes);           // Admin only routes
 app.use('/api/cart', cartRoutes);             // Shopping cart
 
 // Health check
-app.get('/health', (req, res) => {
+app.get('/health', (req: express.Request, res: express.Response) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 

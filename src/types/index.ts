@@ -9,6 +9,9 @@ export interface AuthUser {
 // ✅ This properly extends Express Request
 export interface AuthRequest extends Request {
   user?: AuthUser;
+  params: Request['params'];
+  body: Request['body'];
+  headers: Request['headers'];
 }
 
 // Rest of your types
